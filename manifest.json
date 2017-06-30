@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Casa Gremlino",
+  "version": "1.0",
+
+  "description": "Welcome to the house of gremlin",
+
+  "icons": {
+    "48": "icons/japanese-goblin.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["casa-gremlino.js"]
+    }
+  ]
+}
